@@ -1,0 +1,151 @@
+pageno: 1/nSample PDF Document
+RobertMaron
+Grzegorz Grudzi ´nski
+February20, 1999/npageno: 2/n2/npageno: 3/nContents
+1 Template 5
+1.1 How tocompilea .texﬁleto a.pdfﬁle. . . . . . . . . . . . . 5
+1.1.1 Tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+1.1.2 How to usethetools . . . . . . . . . . . . . . . . . . . . 5
+1.2 How towritea document . . . . . . . . . . . . . . . . . . . . . . 6
+1.2.1 Themaindocument . . . . . . . . . . . . . . . . . . . . . 6
+1.2.2 Chapters . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+1.2.3 Spell-checking . . . . . . . . . . . . . . . . . . . . . . . 6
+1.3 L ATEXand pdfL ATEXcapabilities . . . . . . . . . . . . . . . . . . . 7
+1.3.1 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+1.3.2 L ATEX. . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+1.3.3 pdfL ATEX. . . . . . . . . . . . . . . . . . . . . . . . . . 7
+1.3.4 Examples . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+3/npageno: 4/n4 CONTENTS/npageno: 5/nChapter 1
+Template
+1.1 How to compilea .texﬁleto a.pdfﬁle
+1.1.1 Tools
+To processthe ﬁlesyou(may)need:
+•pdflatex (for example fromtetexpackage≥0.9-6, which you can
+getfromRed Hat5.2 );
+•acroread (a PDFviewer,availablefrom http://www.adobe.com/ );
+•ghostscript≥5.10(forexamplefrom RedHatContrib )andghostview
+orgv(fromRedHatLinux);
+•efaxpackagecouldbe useful,ifyou plantofax documents.
+1.1.2 How touse the tools
+Follow thesesteps:
+1.putallsource.texﬁlesinonedirectory,thenchdirtothedirectory(orput
+someofthemin theL ATEXsearchpath—if youknowhowto dothis);
+2.run“pdflatexfile.tex ”onthemainﬁleofthedocumentthreetimes
+(three—to preparevalidtable ofcontents);
+3.to see or print the result use acroread (unfortunately some versions of
+acroread mayproducePostScriptwhichistoo complex),or
+5/npageno: 6/n6 CHAPTER1. TEMPLATE
+4.runghostscript : “gvfile.pdf ” todisplayor:
+“gs -dNOPAUSE -sDEVICE=pswrite -q -dBATCH -sOutputFile=ﬁle.ps ﬁle.pdf”
+to produce a PostScriptﬁle;
+5.run“fax send phone-numberfile.ps ”asroottosendafax,or—ifyou
+knowhowtodothis—modifythe faxscripttobeabletofax .pdfﬁlesdirectly
+(you have to insert“|%PDF*” somewhere...).
+1.2 How towrite adocument
+1.2.1 Themain document
+Choose the name of the document, say document . Copytemplate.tex to
+document.tex , then edit it, change the title, the authors and set proper in-
+clude(s)for allthechapters.
+1.2.2 Chapters
+Eachchaptershouldbeincludedinthemaindocumentasaseparateﬁle. Youcan
+choose any name for the ﬁle, but we suggest adding a sufﬁx to the name of the
+mainﬁle. Forour examplewe usetheﬁle name document_chapter1.tex .
+First, copytemplate_chapter.tex todocument_chapter1.tex
+andaddthe line
+\include{document_chapter1}
+inthedocument.tex ,theneditdocument_chapter1.tex ,changethe
+chaptertitleand editthebody ofthechapterappropriately.
+1.2.3 Spell-checking
+Douse aspell-checker, please!
+You may also want to check grammar, style and so on. Actually you should
+doit (ifyou have enoughsparetime). But you mustcheckspelling!
+You can use theispell package for this, from within emacs, or from the
+commandline:
+ispell-tdocument_chapter1.tex/npageno: 7/n1.3. LATEX ANDPDFL ATEXCAPABILITIES 7
+1.3 LATEX andpdfLATEX capabilities
+1.3.1 Overview
+First you edit your source .texﬁle. In L ATEX you compile it using the latex
+command to a.dviﬁle (which stands for device-independent). The .dviﬁle
+can be converted to any device-dependent format you like using an appropriate
+driver, forexampledvips.
+When producing.pdfﬁles you should usepdflatex , which produces di-
+rectly.pdfﬁles out of.texsources. Note that in the .texﬁle you may need
+to usesomePDFspeciﬁcpackages.
+For viewing.texﬁles use your favourite text editor, for viewing .dviﬁles
+under X Window System use xdvicommand,.psﬁles can be viewed with gv
+(orghostview ) and.pdfﬁleswithacroread ,gvorxpdf.
+1.3.2 LATEX
+A lotof examplescanbe foundinthis document.
+Youshouldalsoprint
+•doc/latex/general/latex2e.dvi and
+•doc/latex/general/lshort2e.dvi
+fromyourtetexdistribution(usuallyin
+•/usr/share/texmf or
+•/usr/lib/texmf/texmf ).
+1.3.3 pdfLATEX
+Consultdoc/pdftex/manual.pdf from yourtetexdistribution for more
+details. Veryusefulinformationscanbefoundinthe hyperref andgraphics
+packagemanuals:
+•doc/latex/hyperref/manual.pdf and
+•doc/latex/graphics/grfguide.dvi .
+1.3.4 Examples
+References
+MIMUW/npageno: 8/n8 CHAPTER1. TEMPLATE
+Hyperlinks
+Thisisa target.
+Andthisis alink.
+Dashes,etc.
+Therearethreekindsof horizontaldash:
+•- (useinsidewords;forexample“home-page”,“X-rated”)
+•– (usethisonebetweennumbers;for example“pages2–22”)
+•— (usethisoneas a sentenceseparator— like here)
+Nationalcharacters
+•ó, é,í, ...
+•è, à,ì, ...
+•ô, ê,...
+•õ, ñ,...
+•ö, ë,...
+•˙ z
+•˛ a, ˛ e
+•ł, ø,ß
+There are other ways to do this, see the documentation for inputenc pack-
+age.
+Reserved characters
+Some characters have some special meaning, thus cannot be entered in the usual
+way.
+•$ &% # _{ }
+•\
+•˜ ˆ/npageno: 9/n1.3. LATEX ANDPDFL ATEXCAPABILITIES 9
+Math
+•12,12n, ...
+•i1,i2n, ...
+•1
+2,2n
+2−3,...
+•α,β,γ,Ω, ...
+•→,⇒,≥,̸=,∈,⋆, ...
+•√
+2, ...
+•2 + 2, ...
+Formoreexamplesandsymbolsseechapter3of lshort2e.dvi .
+Fonts
+•Roman
+•Emphasis
+•Mediumweight—the default
+•Boldface
+•Upright
+•Slanted
+•Sansserif
+•SMALL CAPS
+•Typewriter
+•andsizes:
+–tiny
+–scriptsize
+–footnotesize
+–small
+–normalsize/npageno: 10/n10 CHAPTER1. TEMPLATE
+–large
+–Large
+–LARGE
+–huge
+–Huge/n

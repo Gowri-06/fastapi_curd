@@ -50,3 +50,8 @@ def update_book(db: Session, book_id: int, title: str, author: str,publication_y
     db.commit()
     db.refresh(_book)
     return _book
+
+
+# def pdftotext():
+
+
