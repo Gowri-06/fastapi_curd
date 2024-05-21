@@ -1,0 +1,25 @@
+Test Parameter,Unit of Measurement,Approximate Normal Range,Notes on Abnormal Values,Prompt
+Hemoglobin (Hb),g/dL,"13.8 to 17.2 g/dL (men), 12.1 to 15.1 g/dL (women)",Low: Anemia; High: Polycythemia, What is my blood type?
+Hematocrit (Hct),%,"41% to 50% (men), 36% to 44% (women)",Low: Anemia; High: Dehydration,Is my blood sugar normal?
+White Blood Cells (WBC),K/µL,4.5 to 11.0 K/µL,Low: Leukopenia; High: Leukocytosis, What is my cholesterol level?
+Red Blood Cells (RBC),M/µL,"4.7 to 6.1 M/µL (men), 4.2 to 5.4 M/µL (women)",Low: Anemia; High: Polycythemia, Are my iron levels okay?
+Platelets,K/µL,150 to 450 K/µL,Low: Thrombocytopenia; High: Thrombocytosis,How many red blood cells do I have?
+Mean Corpuscular Volume (MCV),fL,80 to 100 fL,Low: Microcytosis; High: Macrocytosis, How many white blood cells do I have?
+Glucose,mg/dL,70 to 99 mg/dL,Low: Hypoglycemia; High: Hyperglycemia/Diabetes, What is my platelet count?
+Blood Urea Nitrogen (BUN),mg/dL,7 to 20 mg/dL,High: Renal dysfunction, Is my hemoglobin level normal?
+Creatinine,mg/dL,"0.6 to 1.2 mg/dL (men), 0.5 to 1.1 mg/dL (women)",High: Renal dysfunction,What is my hematocrit percentage?
+Uric Acid,mg/dL,3.4 to 7.0 mg/dL,"High: Gout, Renal dysfunction",Do I have any signs of infection?
+Cholesterol,mg/dL,Less than 200 mg/dL,High: Hypercholesterolemia, Are my liver enzymes normal?
+Triglycerides,mg/dL,Less than 150 mg/dL,High: Hypertriglyceridemia,Is my kidney function normal?
+Sodium (Na),mEq/L,135 to 145 mEq/L,Low: Hyponatremia; High: Hypernatremia, What are my electrolyte levels?
+Potassium (K),mEq/L,3.5 to 5.0 mEq/L,Low: Hypokalemia; High: Hyperkalemia, Is my sodium level normal?
+Chloride (Cl),mEq/L,96 to 106 mEq/L,Low: Hypochloremia; High: Hyperchloremia,Is my potassium level normal?
+Bicarbonate (HCO3),mEq/L,22 to 29 mEq/L,Variable implications,What is my calcium level?
+Alanine transaminase (ALT),U/L,7 to 56 U/L,High: Liver damage, Do I have high cholesterol?
+Aspartate transaminase (AST),U/L,10 to 40 U/L,High: Liver damage,Do I have high blood sugar?
+Alkaline Phosphatase (ALP),U/L,40 to 130 U/L,High: Liver/bone disease,Do I have low blood sugar?
+Bilirubin,mg/dL,0.1 to 1.2 mg/dL,"High: Liver dysfunction, Biliary obstruction", Are my triglycerides normal?
+Glomerular Filtration Rate (GFR),mL/min,>90 mL/min,Low: Renal dysfunction,Do I need to worry about my white blood cell count?
+Creatinine Clearance,mL/min,85 to 135 mL/min,Low: Renal dysfunction,Is my thyroid function normal?
+Thyroid-Stimulating Hormone (TSH),µIU/mL,0.4 to 4.0 µIU/mL,Low: Hyperthyroidism; High: Hypothyroidism,What does my vitamin D level look like?
+Free Thyroxine (FT4),ng/dL,0.9 to 2.3 ng/dL,Low: Hypothyroidism; High: Hyperthyroidism, Do I need to follow up with my doctor?

@@ -1,0 +1,14 @@
+[
+  {
+    "Hemoglobin (Hb)": {
+      "Unit of Measurement": "g/dL",
+      "Approximate Normal Range": "13.8 to 17.2 g/dL (men), 12.1 to 15.1 g/dL (women)",
+      "Notes on Abnormal Values": "Low: Anemia; High: Polycythemia"
+    },
+    "Hematocrit (Hct)": {
+      "Unit of Measurement": "%",
+      "Approximate Normal Range": "41% to 50% (men), 36% to 44% (women)",
+      "Notes on Abnormal Values": "Low: Anemia; High: Dehydration"
+    }
+  }
+]
